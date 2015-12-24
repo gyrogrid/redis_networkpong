@@ -1,8 +1,5 @@
 import time
 import redis
-import rpyc
-import pygame
-from pygame.locals import *
 
 r = redis.Redis(host = 'localhost')
 
