@@ -48,18 +48,6 @@ def moveball():
 	time.sleep(.05)
 	print(r.get('ball_x'), r.get('ball_y'), r.get('ball_dx'), r.get('ball_dy'), r.get('pad1_x'), r.get('pad1_y'), r.get('pad2_x'), r.get('pad2_y'), r.get('score1'), r.get('score2'))
 
-def movepad(direction, player):
-	if player == 1:
-		if direction == 'up':
-			r.incrby('pad1_y', -10)
-		else:
-			r.incrby('pad1_y', 10)
-
-	if player == 2:
-		if direction == 'up':
-			r.incrby('pad2_y', -10)
-		else:
-			r.incrby('pad2_y', 10)
 
 
 def main():
